@@ -23,6 +23,7 @@ public class Controller : MonoBehaviour
         if(isWalking)
         {
             agent.destination = target.transform.position;
+            transform.LookAt(target.transform.position);
         }
         else
         {
